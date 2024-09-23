@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .main{
+            border: 2px solid red;
+            height: 1200vh;
+            width: 90vw;
+        }
+        .container{
+            border: 2px solid green;
+            height: 50%;
+            width: 70%;
+            margin: 30px;
+            position: relative;
+        }
+        .item{
+            border: 2px solid yellow;
+            height: 100px;
+            width: 100px;
+            margin: 2px;
+        }
+        #item2{
+            position: absolute;
+            left:120px;
+            bottom: 10px;
+        }
+        #item3{
+            position: fixed;
+            top:20px;
+        }
+        #item1{
+            position:sticky;
+            top:60px;
+        }
+    </style>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="item" id="item1">item1</div>
+            <div class="item" id="item2">item2</div>
+            <div class="item" id="item3">item3</div>
+        </div>
+    </div>
+</body>
+</html>

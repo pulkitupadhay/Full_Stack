@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container1{
+            height: 550px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .nav{
+            
+            align-items: center;
+            background-color: black;
+            display: flex;
+            height: 40px;
+            
+        }
+        .nav a{
+            height: 100%;
+            padding-top: 20px;
+            padding-left: 30px;
+            text-decoration: none;
+            color: white;
+            justify-content: center;
+            border: none;
+        }
+        .nav select{
+            margin-left: 20px;
+            border: none;
+            padding-left: 35px ;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            font-size: larger;
+        }
+        #xyz:hover{
+            border: none;
+            background-color: white;
+            color: black;
+        }
+        #id{
+            width: 55px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+            background-color: rgb(14, 170, 170);
+            font-weight: bolder;
+            font-size: larger;
+        }
+        #id h6{
+            position: absolute;
+            top: 7px;
+            left: 55px;
+            font-size: larger;
+        }
+        #id img{
+            position: absolute;
+            left: 15px;
+            top: 5px;
+            padding-right: 10px;
+            height: 30px;
+            width: 30px;
+        }
+        .icon img{
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            right: 5px;
+            top: 10px;
+            
+        }
+        .child2 img{
+            height: 60%;
+            width: 100%;
+            
+        }
+        .container2{
+            height: 600px;
+            margin-top: 100px;
+        }
+        .h{
+            text-align: center;
+            padding-top: 180px;
+            width: 100%;
+            height: 30%;
+            font-size: 30px;
+        }
+        .photo{
+            padding-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(4,170px);
+            justify-content: space-evenly;
+        }
+        .photo img{
+            border-radius: 50%;
+            height: 150px;
+            
+        }
+        #st{
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 0px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #nd{
+            font-weight: lighter;
+            padding-top: 0;
+            padding-bottom: 60px;
+            padding-left: 30px;
+            font-size: 18px;
+        }
+        .container3 {
+            margin-top: 70px;
+            width: 100%;
+            height: 550px;
+            background-color: #333333;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
+        }
+        .baby1{
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .baby2,
+        .baby3,
+        .baby4 {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .baby2 img,
+        .baby3 img,
+        .baby4 img {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            max-width: 100%;    
+        }
+        #b{
+            position: relative;
+            right: 36px;
+            bottom: 50px;
+            color: white;
+
+        }
+        #c{
+            color: white;
+            position: relative;
+            bottom: 40px;
+            left: 30px;
+            font-size: large;
+        }
+        .down{
+            box-sizing: border-box;
+            padding-left: 20px;
+            width: 100%;
+            background-color: white;
+        }
+        .container4{
+            height: 700px;
+        }
+        .child3{
+            /* margin-left: 140px; */
+           text-align: center;
+           padding-top: 40px;
+            width: 100%;
+            height: 30%;
+            font-size: 30px;
+        }
+        .child4{
+            height: 70%;
+            display: grid;
+            gap: 50px;
+            grid-template-columns: repeat(3,450px);
+            /* grid-template-rows:520px; */
+            justify-content: center;
+        }
+        .d1,.d2,.d3{
+            margin-bottom: 60px;
+            border: 2px solid lightgrey;
+            height: 520px;
+        }
+        .d1:hover,.d2:hover,.d3:hover{
+            box-shadow:0 3px 4px 0 gray;
+        }
+        .x1{
+            background-color: black;
+            border: 1px solid black;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 20px;
+            height: 85px;
+        }
+        .x2,.x3,.x4,.x5{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid lightgrey;
+            text-align: center;
+            /* padding-top: 20px; */
+            font-size: 20px;
+            height: 60px;
+        }
+        .x6{
+            border: 1px solid lightgrey;
+            text-align: center;
+            height: 110px;
+        }
+        .x7{
+            border: 1px solid lightgrey;
+            /* height: 85px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="child1">
+            <div class="nav">
+                <a href="" id="id"><img src="image/home.png"><h6>Logo</h6></a>
+                <a href="">Team</a>
+                <a href="">Work</a>
+                <a href="">Price</a>
+                <a href="">Contact</a>
+                <select id="xyz">
+                    <option>Dropdown</option>
+                    <option>LINK</option>
+                    <option>LINK</option>
+                    <option>LINK</option>
+                </select>
+            <div class="icon">
+                <a href=""><img src="image/search.png"></a>
+            </div>
+            </div>
+        </div>
+        <div class="child2">
+            <img src="image/scene.jpg">
+        </div>
+    </div>
+    <div class="container2">
+        <div class="h">
+            <h1 >Our Team</h1><br>
+            <h4> Meet the team - our office rats: </h4>
+        </div>
+        <div class="photo">
+
+            <div class="pic1"><img src="image/teamamte.jpg">
+                <h3 id="st">Johnny Walker</h3><br><h4 id="nd"> web developer </h4>
+            </div>
+            <div class="pic2"><img src="image/teamamte.jpg">
+                <h3 id="st">Rebeeca flex</h3><br><h4 id="nd"> Support </h4>
+            </div>
+            <div class="pic3"><img src="image/teamamte.jpg">
+                <h3 id="st">Jan Ringo</h3><br><h4 id="nd">Boss </h4>
+            </div>
+            <div class="pic4"><img src="image/teamamte.jpg">
+                <h3 id="st">Kai Ringo</h3><br><h4 id="nd">Fixer </h4>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="baby1">
+            <h1 id="b">Our Work</h1>
+            <h4 id="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+        </div>
+        <div class="baby2">
+            <div class="up"><img src="image/cus1.jpg"></div>
+            <div class="down">
+                <h1>Customer 1</h1><br>
+                <h2>Trade</h2><br>
+                <h4>
+                    Blablabla<br><br>
+                    Blablabla<br><br>
+                    Blablabla<br><br>
+                    Blablabla<br><br>
+                </h4>
+            </div>
+            
+        </div>
+        <div class="baby3">
+            <div class="up"><img src="image/cus2.jpg"></div>
+        <div class="down">
+            <h1>Customer 2</h1><br>
+                <h2>Trade</h2><br>
+                <h4>
+                    Blablabla<br><br>
+                    Blablabla<br><br>
+                    Blablabla<br><br>
+                    Blablabla<br><br>
+                </h4>
+        </div>
+    </div>
+        <div class="baby4">
+            <div class="up"><img src="image/cus3.jpg"></div>
+        <div class="down">
+            <h1>Customer 3</h1><br>
+            <h2>Trade</h2><br>
+            <h4>
+                Blablabla<br><br>
+                Blablabla<br><br>
+                Blablabla<br><br>
+                Blablabla<br><br>
+            </h4>
+        </div>
+    </div>
+    </div>
+    <div class="container4">
+        <div class="child3">
+            <h2>PRICING</h2><br>
+            <h6>Choose a pricing plan that fits your needs.</h6>
+        </div>
+        <div class="child4">
+            <div class="d1">
+                <div class="x1">Basic</div>
+                <div class="x2">10GB Storage</div>
+                <div class="x3">10 Emails</div>
+                <div class="x4">10 Domains</div>
+                <div class="x5">Endless Support</div>
+                <div class="x6">$ 10<br>per month</div>
+                <div class="x7">hyyuggy</div>
+            </div>
+            <div class="d2">
+                <div class="x1">Pro</div>
+                <div class="x2">25GB Storage</div>
+                <div class="x3">25 Emails</div>
+                <div class="x4">25 Domains</div>
+                <div class="x5">Endless Support</div>
+                <div class="x6">$ 25<br>per month</div>
+                <div class="x7"></div>
+            </div>
+            <div class="d3">
+                <div class="x1">Premium</div>
+                <div class="x2">50GB Storage</div>
+                <div class="x3">50 Emails</div>
+                <div class="x4">50 Domains</div>
+                <div class="x5">Endless Support</div>
+                <div class="x6">$ 50<br>per month</div>
+                <div class="x7"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container5"></div>
+    <div class="container6"></div>
+    <div class="container7"></div>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    .container1{
+        display: flex;
+        /* border: 2px solid red; */
+        height: 12vh;
+       
+    }
+    .container2{
+        display: flex;
+        /* border: 2px solid black; */
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        height: 75vh;
+
+    }
+    .container3{
+        display: flex;
+        justify-content: center;
+        /* border: 2px solid green; */
+        height: 10vh;
+        padding-left: 30px;
+    }
+    .child1{
+        display: flex;
+        align-items: center;
+        /* border: 2px solid green; */
+        width: 50%;
+        margin: 3px;
+        padding-left: 40px;
+        
+    }
+    .child2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* border: 2px solid black; */
+        width: 50%;
+        margin: 3px;
+
+    }
+    .child3{
+        /* border: 2px solid green; */
+        width: 70%;
+        margin: 3px;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+    .child4{
+        /* border: 2px solid black; */
+        width: 30%;
+        margin: 3px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    #btn{
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 40px;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .heading{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: lighter;
+        font-size: 70px;
+    }
+    .hell{
+        padding-top: 50px;
+        font-weight: lighter;
+    }
+    #bt{
+        background-color: black;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 40px;
+        position: relative;
+        top: 80px;
+    }
+    .container3 a{
+        /* padding-top: 0.5rem; */
+        padding-left: 4rem;
+    }
+</style>
+<body>
+    <div class="container1">
+        <div class="child1"><h1>Medium</h1></div>
+        <div class="child2">
+            <a href="">Our story</a>
+            <a href="">Membership</a>
+            <a href="">write</a>
+            <a href="">sign in</a>
+            <a href="" id="btn">Get started</a>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="child3">
+            <h1 class="heading"><strong>Human</strong><br> <strong>stories & ideas</strong></h1>
+            <h1 class="hell">A place to read, write and deepaen your understanding</h1>
+            <a href="" id="bt">start reading</a>
+        </div>
+        <div class="child4">
+            <img src="https://miro.medium.com/v2/format:webp/4*SdjkdS98aKH76I8eD0_qjw.png">
+        </div>
+    </div>
+    <div class="container3">
+        <a href="">Help</a>
+        <a href="">Status</a>
+        <a href="">About</a>
+        <a href="">Careers</a>
+        <a href="">Press</a>
+        <a href="">Blog</a>
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+        <a href="">Next to speech</a>
+        <a href="">Condition</a>
+    </div>
+</body>
+</html>

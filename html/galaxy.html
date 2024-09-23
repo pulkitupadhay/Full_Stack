@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .container{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175vh;
+    width: 100vw;
+    position: absolute;
+ }
+ .sun{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: linear-gradient(to left,orange,red);
+    box-shadow: 0 0 50px rgb(247, 247, 99);
+ }
+ .orbit1, .orbit2, .orbit3, .orbit4, .orbit5, .orbit6,.orbit7,.orbit8{
+    animation-name: solar;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+    position: absolute;
+    /* border: 2px solid white; */
+ }
+ .orbit1{
+    height: 250px;
+    width: 250px;
+    animation-duration: 4s;
+ }
+ .orbit2{
+    height: 335px;
+    width: 335px;
+    animation-duration: 4.5s;
+ }
+ .orbit3{
+    height: 460px;
+    width: 460px;
+    animation-duration: 6s;
+ }
+ .orbit4{
+    height: 580px;
+    width: 580px;
+    animation-duration: 7s;
+ }
+ .orbit5{
+    height: 750px;
+    width: 750px;
+    animation-duration: 9s;
+ }
+ .orbit6{
+    height: 970px;
+    width: 970px;
+    animation-duration: 10s;
+ }
+ .orbit7{
+    height: 1200px;
+    width: 1200px;
+    animation-duration: 11s;
+ }
+ .orbit8{
+    height: 1400px;
+    width: 1400px;
+    animation-duration: 12s;
+ }
+ .mercury, .venus, .earth, .mars, .jupiter, .saturn,.uranus,.neptune{
+    border-radius: 50%;
+    position: absolute;
+ }
+ .mercury{
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(to left,rgb(212, 212, 63),rgb(91, 61, 6));
+    top: 17%;
+ }
+ .venus{
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(to right, rgb(237, 201, 175), rgb(205, 133, 63));
+    top: 20%;
+    }
+ .earth{
+    width: 60px;
+    height: 60px;
+    background-image: linear-gradient(to right, rgb(34, 139, 34), rgb(0, 0, 255));
+    top: 18%;
+ }
+ .mars{
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(to right, rgb(210, 105, 30), rgb(178, 34, 34));
+    top: 25%;
+ }
+ .jupiter{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to right, rgb(218, 165, 32), rgb(160, 82, 45));
+    top: 18%;
+ }
+ .saturn{
+    width: 87px;
+    height: 87px;
+    background-image: linear-gradient(to right, rgb(210, 180, 140), rgb(139, 69, 19));
+    top: 22%;
+ }
+ .uranus{
+    width: 80px;
+    height: 80px;
+    background-image: linear-gradient(to right,lightblue,rgb(110, 110, 210));
+    top: 29%;
+ }
+ .neptune{
+    width: 70px;
+    height: 70px;
+    background-image: linear-gradient(to right,rgb(151, 210, 230),rgb(99, 99, 213));
+    top: 31%;
+ }
+ .saturn-ring{
+    width: 130px;
+    height: 20px;
+    border: 10px solid rgba(210, 180, 140, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; 
+ }
+ .uranus-ring{
+    width: 130px;
+    height: 20px;
+    border: 10px solid rgb(220, 229, 232);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; 
+ }
+ .xy{
+    height: 100%;
+    width: 100%;
+ }
+ .xy img{
+    height: 100%;
+    width: 100%;
+ }
+ @keyframes solar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+ }
+</style>
+<body>
+    <div class="container">
+        <!-- <div class="xy"><img src="image/star" alt=""></div> -->
+        <div class="sun"></div>
+        <div class="orbit1">
+            <div class="mercury"></div>
+        </div>
+        <div class="orbit2">
+            <div class="venus"></div>
+        </div>
+        <div class="orbit3">
+            <div class="earth"></div>
+        </div>
+        <div class="orbit4">
+            <div class="mars"></div>
+        </div>
+        <div class="orbit5">
+            <div class="jupiter"></div>
+        </div>
+        <div class="orbit6">
+            <div class="saturn">
+                <div class="saturn-ring"></div>
+            </div>
+        </div>
+        <div class="orbit7">
+            <div class="uranus">
+                <div class="uranus-ring"></div>
+            </div>
+        </div>
+        <div class="orbit8">
+            <div class="neptune"></div>
+        </div>
+    </div>
+</body>
+</html>
