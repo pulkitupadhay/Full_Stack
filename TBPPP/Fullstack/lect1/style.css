@@ -1,0 +1,29 @@
+.container{
+    height: 100vh;
+    background-color: aqua;
+}
+col{
+    background-color: red;
+}
+.row{
+    display: flex;
+}
+#id1{
+    height: 15%;
+    background-color: rgb(205, 205, 128);
+}
+#id2{
+    height: 10%;
+    background-color: lightblue;
+}
+#id3{
+    height: 70%;
+    background-color: lightgoldenrodyellow;
+}
+#id4{
+    height: 5%;
+    background-color: rgb(213, 213, 129);
+}
+.col{
+    border: 3px solid black;
+}
