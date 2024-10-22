@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            margin: auto;
+            width: 80%;
+        }
+        .child1 {
+            position: relative;
+        }
+        .slider {
+            display: none; /* Hide all images initially */
+        }
+        .slider.active {
+            display: block; /* Show only the active image */
+        }
+        .navigation-button {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .dot.active {
+            background-color: #717171;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child1">
+            <div class="slider active">
+                <img src="https://files.lpu.in//umsweb//Events//umseventAssets//27273_2024_10_10_17_19.jpg" alt="">
+            </div>
+            <div class="slider">
+                <img src="https://files.lpu.in//umsweb//Events//umseventAssets//27273_2024_8_14_13_51.png" alt="">
+            </div>
+            <div class="navigation-button">
+                <span class="dot active" onclick="changeSlide(0)"></span>
+                <span class="dot" onclick="changeSlide(1)"></span>
+            </div>
+        </div>
+
+        <div class="child2">
+            <div class="child3">
+                <img src="https://ums.lpu.in/lpuums/assets/login/img/logos/ums_logo1.svg" alt="">
+            </div>
+            <div class="child4">
+               <h2>Log in</h2>
+               <select>
+                    <option>Select an option</option>
+               </select>
+               <input type="text" placeholder="User ID">
+               <div style="position: relative;">
+                    <input type="password" placeholder="Password">
+                    <span class="password-icon"></span>
+               </div>
+               <a href="#" class="forgot-password">Forget your password?</a>
+               <button class="login-button">Login</button>
+               <div class="student-mail">
+                   <a href="#">Student mail</a>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Carousel Functionality -->
+    <script>
+        let currentSlide = 0;
+
+        function changeSlide(index) {
+            const slides = document.querySelectorAll('.slider');
+            const dots = document.querySelectorAll('.dot');
+
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            // Show the selected slide
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+
+            currentSlide = index; // Update current slide index
+        }
+    </script>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
