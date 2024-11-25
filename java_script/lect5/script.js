@@ -8,7 +8,7 @@ subButton.addEventListener('click',()=>{
     // console.log(inBox)
     fetch(`https://imdb.iamidiotareyoutoo.com/justwatch?q='${inpvalu}'`)
     .then((res)=>{
-        return res.json();
+        return res.json();m 
     }).then((data)=>{
         let movies=data.description;
         console.log(movies);

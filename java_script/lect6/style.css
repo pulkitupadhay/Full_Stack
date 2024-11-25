@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 2px solid black;
+    height: 500px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 130px;
+    gap: 4px 4px;
+
+}
+.btn{
+    margin: 6px;
+}
+.output{
+    
+}
