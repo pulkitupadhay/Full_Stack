@@ -3,6 +3,17 @@ const userRoutes=require('./routes/userRouters.js');
 const productRoutes=require('./routes/ProductRouters.js');
 const app=express();
 
+app.set('view engine','ejs');
+app.set('views','./views');
+
+let obj={
+    name:"abc",
+    age:25
+}
+app.get('/home',(req,res)=>{
+    res.render('home',{obj});
+})
+
 //application level middleware
 // app.use(userRoutes);
 // app.use(productRoutes);
